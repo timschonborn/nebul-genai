@@ -9,7 +9,7 @@ authors = [
   { name = "Tim Schönborn", email = "tim.schoenborn@nebul.com" },
 ]
 
-requires-python = ">=3.11, <3.12"
+requires-python = "~=3.11.0"
 dependencies = ["PyPDF2"]
 
 [build-system]
