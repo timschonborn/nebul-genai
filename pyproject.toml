@@ -1,13 +1,18 @@
 [project]
 name = "nebul-genai"
 version = "0.1.0"
-description = "Add your description here"
+description = "Nebul's GenAI library"
 readme = "README.md"
 authors = [
+    { name = "Willem Momma", email = "willem.momma@nebul.com" },
+    { name = "Pieter Becking", email = "pieter.becking@nebul.com" },
     { name = "Tim Schönborn", email = "tim.schoenborn@nebul.com" }
 ]
-requires-python = ">=3.11"
-dependencies = []
+
+requires-python = ">=3.11, <3.12"
+dependencies = [
+    "PyPDF2",
+]
 
 [build-system]
 requires = ["hatchling"]
