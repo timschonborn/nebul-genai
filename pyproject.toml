@@ -4,17 +4,17 @@ version = "0.1.0"
 description = "Nebul's GenAI library"
 readme = "README.md"
 authors = [
-    { name = "Willem Momma", email = "willem.momma@nebul.com" },
-    { name = "Pieter Becking", email = "pieter.becking@nebul.com" },
-    { name = "Tim Schönborn", email = "tim.schoenborn@nebul.com" }
+  { name = "Willem Momma", email = "willem.momma@nebul.com" },
+  { name = "Pieter Becking", email = "pieter.becking@nebul.com" },
+  { name = "Tim Schönborn", email = "tim.schoenborn@nebul.com" },
 ]
 
 requires-python = ">=3.11, <3.12"
-dependencies = [
-    "PyPDF2",
-]
+dependencies = ["PyPDF2"]
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[project.optional-dependencies]
+test = ["pytest>=7.0", "pytest-cov>=4.0", "pytest-asyncio>=0.21.0"]
