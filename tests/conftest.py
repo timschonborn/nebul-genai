@@ -6,8 +6,8 @@ from nebul_genai.types import Document, Chunk
 def sample_document():
     return Document(
         content="This is a test document.",
+        chunks=[],
         metadata={"source": "test"},
-        source="test.txt",
     )
 
 
@@ -15,7 +15,7 @@ def sample_document():
 def sample_chunk():
     return Chunk(
         content="This is a test chunk.",
-        document_id="test-doc",
-        chunk_index=0,
+        start_index=0,
+        end_index=10,
         metadata={"position": "first"},
     )
